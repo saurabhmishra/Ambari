@@ -10,4 +10,6 @@ sleep 100
 
 curl -u 'admin:admin' -H "X-Requested-By:ambari" -i -X POST -d "{\"blueprint\" : \"single-node-hdfs-yarn\",\"host-groups\" :[{\"name\":\"single-host\",\"hosts\":[{\"fqdn\" : \"`hostname -f`\"}]}]}" http://`hostname -f`:8999/api/v1/clusters/single-node-hdfs-yarn
 
-echo 'Ambari Development VM has been set up! Enjoy!'
+sleep 600
+
+echo 'Ambari Development VM has been set up! Enjoy! Access URL http://'`hostname -f`':8999'
