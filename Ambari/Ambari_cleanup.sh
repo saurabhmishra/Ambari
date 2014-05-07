@@ -1,7 +1,7 @@
 #!/bin/bash
 
-yum remove sqoop.noarch lzo-devel.x86_64 hadoop-libhdfs.x86_64 rrdtool.x86_64 hbase.noarch pig.noarch,lzo.x86_64 ambari-log4j.noarch oozie.noarch oozie-client.noarch gweb.noarch snappy-devel.x86_64 hcatalog.noarch python-rrdtool.x86_64 nagios.x86_64 webhcat-tar-pig.noarch snappy.x86_64 libconfuse.x86_64 webhcat-tar-hive.noarch ganglia-gmetad.x86_64 extjs.noarch hive.noarch hadoop-lzo.x86_64 hadoop-lzo-native.x86_64 hadoop-native.x86_64 hadoop-pipes.x86_64 nagios-plugins.x86_64 hadoop.x86_64 zookeeper.noarch mysql-libs.x86_64 mysql-connector-java.noarch mysql-server.x86_64 hadoop-sbin.x86_64 ganglia-gmond.x86_64 libganglia.x86_64 perl-rrdtool.x86_64
-yum remove ambari-server ambari-agent ambari-log4j hdp_mon_ganglia_addon  hdp_mon_nagios_addon
+yum -y remove bigtop* sqoop.noarch lzo-devel.x86_64 hadoop-libhdfs.x86_64 rrdtool.x86_64 hbase.noarch pig.noarch,lzo.x86_64 ambari-log4j.noarch oozie.noarch oozie-client.noarch gweb.noarch snappy-devel.x86_64 hcatalog.noarch python-rrdtool.x86_64 nagios.x86_64 webhcat-tar-pig.noarch snappy.x86_64 libconfuse.x86_64 webhcat-tar-hive.noarch ganglia-gmetad.x86_64 extjs.noarch hive.noarch hadoop-lzo.x86_64 hadoop-lzo-native.x86_64 hadoop-native.x86_64 hadoop-pipes.x86_64 nagios-plugins.x86_64 hadoop.x86_64 zookeeper.noarch mysql-libs.x86_64 mysql-connector-java.noarch mysql-server.x86_64 hadoop-sbin.x86_64 ganglia-gmond.x86_64 libganglia.x86_64 perl-rrdtool.x86_64
+yum -y remove ambari-server ambari-agent ambari-log4j hdp_mon_ganglia_addon  hdp_mon_nagios_addon
 yum list installed | grep HDP
 yum list installed | grep HDP-UTILS
 
